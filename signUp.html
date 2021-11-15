@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./signUp.css">
+    <title>SignIn SignUp</title>
+</head>
+
+<body>
+    <main class="main-wrapper">
+        <div class="image-background">
+            <picture>
+                <source srcset="./images/tablet-bg.jpg" media="(min-width: 768px">
+                <source srcset="./images/desktop-bg.jpg" media="(min-width: 992px">
+                <img class="img-header" src="images/bg.jpg" alt="background images">
+            </picture>
+        </div>
+
+        <form class="form-signup" id="form" submit="sendForm()">
+            <h2 class="name-page">Sign Up</h2>
+            <div class="wrapper-input">
+                <label for="firstName"></label>
+                <img class="img-icon" src="./images/icon-fname.svg" alt="icon">
+                <input class="input-data input-data_center firstName " type="text" name="firstName"
+                    placeholder="First Name">
+
+            </div>
+            <div class="wrapper-input">
+                <label for="lastName"></label>
+                <img class="img-icon" src="./images/icon-fname.svg" alt="icon">
+                <input class="input-data input-data_center lastName" type="text" name="lastName"
+                    placeholder="Last Name">
+            </div>
+            <div class="wrapper-input">
+                <label for="email"></label>
+                <img class="img-icon" src="./images/icon-email.svg" alt="icon">
+                <input class="input-data input-data_center email" type="email" name="email" placeholder="Email">
+                <span class="errorEmail">Email is not valid</span>
+            </div>
+            <div class="wrapper-input">
+                <label for="password"></label>
+                <img class="img-icon" src="./images/icon-lock.svg" alt="icon">
+                <input class="input-data input-data_center password input-data_eye" type="password" name="password"
+                    placeholder="Password">
+                <img class="eye" src="./images/icon-eye.svg">
+
+            </div>
+            <div class="wrapper-input">
+                <label for="confirmPassword"></label>
+                <img class="img-icon" src="./images/icon-pass-confirm.svg" alt="icon">
+                <input class="input-data input-data_center confirmPassword" type="password" name="confirmPassword"
+                    placeholder="Confirm Password">
+                <img class="confirm-eye" src="./images/icon-eye.svg">
+            </div>
+            <div class="wrapper-send-form">
+                <button class="send-form" type="submit">Sign Up ></button>
+            </div>
+        </form>
+        <div class="wrapper-open-signin">
+            Already have an account?
+            <br>
+            <a class="link-on-signin" href="./signIn/signIn.html">Sign in</a>
+        </div>
+    </main>
+    <script src="signUp.js"></script>
+</body>
+
+</html>
