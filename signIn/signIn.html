@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./signIn.css">
+    <title>SignIn</title>
+</head>
+
+<body>
+    <main class="main-wrapper">
+        <div class="image-background">
+            <img class="img-header" src="../images/bg.jpg" alt="background images">
+        </div>
+
+        <form class="form-signup" id="form" submit="sendForm()">
+            <h2 class="name-page">Sign In</h2>           
+            <div class="wrapper-input">
+                <label for="email"></label>
+                <img class="img-icon" src="../images/icon-email.svg" alt="icon">
+                <input class="input-data input-data_center email" type="email" name="email" placeholder="Email">                
+            </div>
+            <div class="wrapper-input">
+                <label for="password"></label>
+                <img class="img-icon" src="../images/icon-lock.svg" alt="icon">
+                <input class="input-data input-data_center password input-data_eye" type="password" name="password"
+                    placeholder="Password">
+                <img class="eye" src="../images/icon-eye.svg">
+
+            </div>            
+            <div class="wrapper-send-form">
+                <button class="send-form" type="submit">Sign Up ></button>
+            </div>
+        </form>
+        <div class="wrapper-open-signup">
+            Don't have an account?
+            <br>
+            <a class="link-on-signup" href="../signUp.html">Sign up</a>
+        </div>
+    </main>
+    <script src="signIn.js"></script>
+</body>
+
+</html>
