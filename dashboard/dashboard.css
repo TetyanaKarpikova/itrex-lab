@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins';
+  background-color: #F9FAFF;
+}
+
+.main-wrapper {
+  background-color: #F9FAFF;
+}
+
+.image-background {
+  width: 100%;
+  z-index: -1;
+}
+
+.img-header {
+  width: 100%;
+  margin-bottom: -50%;
+}
